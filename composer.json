@@ -1,0 +1,64 @@
+{
+    "name": "itinerisltd/crop-thumbnails-meta",
+    "type": "metapackage",
+    "description": "Metapackage to install the Crop-Thumbnails WordPress plugin along with Itineris' tweaks.",
+    "keywords": [
+        "thumbnails",
+        "crop-thumbnails",
+        "cdn",
+        "cache",
+        "wordpress",
+        "wp"
+    ],
+    "homepage": "https://github.com/ItinerisLtd/crop-thumbnails-meta",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Itineris Limited",
+            "email": "dev@itineris.co.uk",
+            "homepage": "https://itineris.co.uk/",
+            "role": "Company"
+        },
+        {
+            "name": "Tang Rufus",
+            "email": "tangrufus@gmail.com",
+            "homepage": "https://typist.tech/",
+            "role": "Developer"
+        }
+    ],
+    "repositories":[
+        {
+            "type": "package",
+            "package": {
+              "name": "wpackagist-plugin/crop-thumbnails",
+              "type": "wordpress-plugin",
+              "version": "1.2.6.999",
+              "dist": {
+                "type": "zip",
+                "url": "https://github.com/ItinerisLtd/crop-thumbnails/archive/1.2.6.999.zip"
+              }
+            }
+          }
+    ],
+    "require": {
+        "wpackagist-plugin/crop-thumbnails": "*",
+        "itinerisltd/crop-thumbnails-cdn-cache-busting": "*"
+    },
+    "conflict": {
+        "deliciousbrains-plugin/wp-offload-media": "*"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1.x-dev"
+        }
+    },
+    "prefer-stable": true,
+    "support": {
+        "email": "dev@itineris.co.uk",
+        "issues": "https://github.com/ItinerisLtd/crop-thumbnails-meta/issues",
+        "source": "https://github.com/ItinerisLtd/crop-thumbnails-meta"
+    }
+}
