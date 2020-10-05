@@ -4,30 +4,6 @@ Metapackage to install the [Crop-Thumbnails](https://wordpress.org/plugins/crop-
 
 ## Installation
 
-Add `repositories` to `composer.json` (**order matters**):
-
-```json
-"repositories":[
-    {
-        "type": "package",
-        "package": {
-            "name": "wpackagist-plugin/crop-thumbnails",
-            "type": "wordpress-plugin",
-            "version": "1.2.6.999",
-            "dist": {
-                "type": "zip",
-                "url": "https://github.com/ItinerisLtd/crop-thumbnails/archive/1.2.6.999.zip"
-            }
-        }
-    },
-    {
-        "type":"composer",
-        "url":"https://wpackagist.org",
-        "only": ["wpackagist-plugin/*", "wpackagist-theme/*"]
-    }
-],
-```
-
 ```bash
 composer require itinerisltd/crop-thumbnails-meta
 ```
